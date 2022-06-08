@@ -23,14 +23,14 @@ padding:0;
 
 #headerText { 
     font-family: 'Poppins', sans-serif;
-    color: azure;
+    color: #b5e48c;
     
     
 }
 
 #headerText:hover{ 
     transition: 0.3s;
-    color:#64dfdf; 
+    color:azure; 
     cursor: pointer;
 }
 .container { 
