@@ -24,6 +24,7 @@ padding:0;
 #headerText { 
     font-family: 'Poppins', sans-serif;
     color: #7FC6A4;
+    text-decoration: underline;
     
 }
 
@@ -40,13 +41,15 @@ padding:0;
     height: 850px;
     background-color: #D6F8D6;
     
- 
 }
 
 .content {
  width: 816px;
  height: 816px;
  background: #004643;
+ border: solid #004643;
+    border-radius: 8px;
+ 
 }
 
 
