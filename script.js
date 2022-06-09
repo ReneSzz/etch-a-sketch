@@ -12,6 +12,7 @@ content.style.width = "816px";
 content.style.height = "816px";
 content.style.backgroundColor = "#b5e48c";
 content.style.display = "flex";
+content.style.flexWrap = "wrap";
 container.appendChild(content);
 
 
@@ -22,13 +23,13 @@ container.appendChild(content);
 
 let newBlock = 0;
 
-newBlock = MAX_SIZE/(blockSize*blockSize);
+newBlock = MAX_SIZE/blockSize;
 console.log(newBlock);
 let blocksToCreate = blockSize*blockSize; 
 console.log(blocksToCreate)
 
 
-for (i=0; i <= blockSize*blockSize; i++)
+for (i=0; i < blockSize*blockSize; i++)
 {
     const pixelBlock = document.createElement('div')
     pixelBlock.classList.add('pixelBlock')
