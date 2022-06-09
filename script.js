@@ -33,11 +33,22 @@ for (i=0; i < blockSize*blockSize; i++)
 {
     const pixelBlock = document.createElement('div')
     pixelBlock.classList.add('pixelBlock')
-    
+    pixelBlock.style.h
     pixelBlock.style.width = `${newBlock}px`;
     pixelBlock.style.height = `${newBlock}px`;
-    pixelBlock.style.backgroundColor = "black";
+    pixelBlock.style.backgroundColor = "white";
     content.appendChild(pixelBlock);
     console.log(pixelBlock);
    
+}
+const pixelBlocks = document.querySelectorAll(".pixelBlock");
+
+pixelBlocks[0].addEventListener('click', function(e){
+    pixelBlocks.style.backgroundColor = "black";
+    });
+
+for (const pixelBlock of pixelBlocks){
+pixelBlock.addEventListener ('click', function(e){
+pixelBlock.style.backgroundColor = "black";
+});
 }
