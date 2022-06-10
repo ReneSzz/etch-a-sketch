@@ -1,11 +1,15 @@
-let blockSize = 4;
+// test variable decleration
+let blockSize = 32;
 const MAX_SIZE = 816;
+
+
+
 
 const container = document.querySelector('#container');
 
 
 
-
+//creation of content element which will house all the pixelBlocks.
 const content = document.createElement("div");
 content.classList.add('content');
 content.style.width = "816px";
@@ -29,6 +33,8 @@ let blocksToCreate = blockSize*blockSize;
 console.log(blocksToCreate)
 
 
+
+// for loop to create elements.
 for (i=0; i < blockSize*blockSize; i++)
 {
     const pixelBlock = document.createElement('div')
@@ -43,12 +49,15 @@ for (i=0; i < blockSize*blockSize; i++)
 }
 const pixelBlocks = document.querySelectorAll(".pixelBlock");
 
-pixelBlocks[0].addEventListener('click', function(e){
-    pixelBlocks.style.backgroundColor = "black";
-    });
+// pixelBlocks[0].addEventListener('click', function(e){
+   
+//     });
+// allows the boxes to be clickable. :) 
 
+// need to add variable function to change color of pixels.
 for (const pixelBlock of pixelBlocks){
-pixelBlock.addEventListener ('click', function(e){
+pixelBlock.addEventListener ('click' && 'mousemove', function(e){
 pixelBlock.style.backgroundColor = "black";
+
 });
 }
