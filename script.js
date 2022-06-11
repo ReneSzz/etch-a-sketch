@@ -17,22 +17,23 @@ content.style.height = "816px";
 content.style.backgroundColor = "#b5e48c";
 content.style.display = "flex";
 content.style.flexWrap = "wrap";
+content.style.marginRight = "200px";
 container.appendChild(content);
 
 
 
 
+const resizeButton = document.querySelector('#resizeButton');
 
 
 
 let newBlock = 0;
 
 newBlock = MAX_SIZE/blockSize;
-console.log(newBlock);
 let blocksToCreate = blockSize*blockSize; 
-console.log(blocksToCreate)
 
 
+function createBlocks(blockSize) { 
 
 // for loop to create elements.
 for (i=0; i < blockSize*blockSize; i++)
@@ -47,6 +48,13 @@ for (i=0; i < blockSize*blockSize; i++)
     console.log(pixelBlock);
    
 }
+
+}
+
+
+createBlocks(blockSize);
+
+
 const pixelBlocks = document.querySelectorAll(".pixelBlock");
 
 // pixelBlocks[0].addEventListener('click', function(e){
@@ -55,9 +63,28 @@ const pixelBlocks = document.querySelectorAll(".pixelBlock");
 // allows the boxes to be clickable. :) 
 
 // need to add variable function to change color of pixels.
+
+
+
+
 for (const pixelBlock of pixelBlocks){
 pixelBlock.addEventListener ('click' && 'mousemove', function(e){
 pixelBlock.style.backgroundColor = "black";
 
 });
 }
+
+
+resizeButton.addEventListener('click', function(e){
+blockSize = prompt("Enter how large you want the blocks.")
+
+
+for  (let i =0; i < pixelBlocks.length; i++)  {
+pixelBlocks[i].parentNode.removeChild(pixelBlocks[i]);
+
+
+
+
+}
+createBlocks(blockSize);
+});

@@ -15,7 +15,7 @@ padding:0;
     align-items: center;
     width: auto;
     height: 100px;
-    background-color: #7FC6A4;
+    background-color: #adb5bd;
     background-size:100%;
     margin: 0;
   
@@ -23,14 +23,14 @@ padding:0;
 
 #headerText { 
     font-family: 'Poppins', sans-serif;
-    color: #b5e48c;
+    color: azure;
     
     
 }
 
 #headerText:hover{ 
     transition: 0.3s;
-    color:azure; 
+    color:#212529; 
     cursor: pointer;
 }
 #container { 
@@ -39,7 +39,7 @@ padding:0;
     justify-content: center;
     width: auto;
     height: 900px;
-    background-color: #7FC6A4;
+    background-color: #adb5bd;
     padding-bottom: 100px;
     
 }
@@ -48,12 +48,21 @@ padding:0;
 
 
 #resizeButton{
-    background: #3882f6;
-    color: #f9faf8;
+    background: azure;
+    color: #adb5bd;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 6px 24px;
     border: none;
-    border-radius: 8px;
+    /* border-radius: 4px; */
+    margin-right: 64px;
+    
    
+}
+
+#resizeButton:hover
+{
+    transition: 0.3s;
+    background: #212529;
+    color: azure;
 }
