@@ -27,10 +27,10 @@ const resizeButton = document.querySelector('#resizeButton');
 
 
 
-let newBlock = 0;
+// let newBlock = 0;
 
-newBlock = MAX_SIZE/blockSize;
-let blocksToCreate = blockSize*blockSize; 
+// newBlock = MAX_SIZE/blockSize;
+// let blocksToCreate = blockSize*blockSize; 
 
 
 function createBlocks(blockSize) { 
@@ -38,6 +38,13 @@ function createBlocks(blockSize) {
 // for loop to create elements.
 for (i=0; i < blockSize*blockSize; i++)
 {
+
+let newBlock = 0;
+
+newBlock = MAX_SIZE/blockSize;
+// let blocksToCreate = blockSize*blockSize; 
+
+
     const pixelBlock = document.createElement('div')
     pixelBlock.classList.add('pixelBlock')
     pixelBlock.style.h
@@ -57,6 +64,20 @@ createBlocks(blockSize);
 
 const pixelBlocks = document.querySelectorAll(".pixelBlock");
 
+
+
+function colorAdder () {
+
+for (const pixelBlock of pixelBlocks){
+pixelBlock.addEventListener ('click' && 'mousemove', function(e){
+pixelBlock.style.backgroundColor = "black";
+
+});
+}
+
+}
+
+colorAdder()
 // pixelBlocks[0].addEventListener('click', function(e){
    
 //     });
@@ -67,16 +88,8 @@ const pixelBlocks = document.querySelectorAll(".pixelBlock");
 
 
 
-for (const pixelBlock of pixelBlocks){
-pixelBlock.addEventListener ('click' && 'mousemove', function(e){
-pixelBlock.style.backgroundColor = "black";
-
-});
-}
-
-
 resizeButton.addEventListener('click', function(e){
-blockSize = prompt("Enter how large you want the blocks.")
+// blockSize = prompt("Enter how large you want the blocks.")
 
 
 for  (let i =0; i < pixelBlocks.length; i++)  {
@@ -86,5 +99,6 @@ pixelBlocks[i].parentNode.removeChild(pixelBlocks[i]);
 
 
 }
-createBlocks(blockSize);
+//createBlocks(blockSize);
+
 });
