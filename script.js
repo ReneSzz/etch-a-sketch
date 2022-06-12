@@ -81,7 +81,7 @@ colorAdder ();
 
 
 resizeButton.addEventListener('click', function(e){
-// blockSize = prompt("Enter how large you want the blocks.")
+blockSize = prompt("Enter how large you want the blocks.")
 
 
 for  (let i =0; i < pixelBlocks.length; i++)  {
