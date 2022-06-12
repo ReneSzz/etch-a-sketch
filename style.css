@@ -67,3 +67,10 @@ padding:0;
     background: azure;
     color: #212529;
 }
+
+
+#menuBAr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
