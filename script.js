@@ -45,7 +45,7 @@ newBlock = MAX_SIZE/blockSize;
 // let blocksToCreate = blockSize*blockSize; 
 
 
-    const pixelBlock = document.createElement('div')
+    let pixelBlock = document.createElement('div')
     pixelBlock.classList.add('pixelBlock')
     pixelBlock.style.h
     pixelBlock.style.width = `${newBlock}px`;
@@ -62,13 +62,13 @@ newBlock = MAX_SIZE/blockSize;
 createBlocks(blockSize);
 
 
-const pixelBlocks = document.querySelectorAll(".pixelBlock");
+let pixelBlocks = document.querySelectorAll(".pixelBlock");
 
 
 
 function colorAdder () {
 
-for (const pixelBlock of pixelBlocks){
+for (let pixelBlock of pixelBlocks){
 pixelBlock.addEventListener ('click' && 'mousemove', function(e){
 pixelBlock.style.backgroundColor = "black";
 
@@ -76,15 +76,7 @@ pixelBlock.style.backgroundColor = "black";
 }
 
 }
-
-colorAdder()
-// pixelBlocks[0].addEventListener('click', function(e){
-   
-//     });
-// allows the boxes to be clickable. :) 
-
-// need to add variable function to change color of pixels.
-
+colorAdder ();
 
 
 
@@ -93,12 +85,13 @@ resizeButton.addEventListener('click', function(e){
 
 
 for  (let i =0; i < pixelBlocks.length; i++)  {
-pixelBlocks[i].parentNode.removeChild(pixelBlocks[i]);
+content.removeChild(pixelBlocks[i]);
 
 
 
 
 }
-//createBlocks(blockSize);
-
+createBlocks(blockSize);
+ pixelBlocks = document.querySelectorAll(".pixelBlock");
+colorAdder();
 });
