@@ -1,7 +1,7 @@
 // test variable decleration
 let blockSize = 32;
 const MAX_SIZE = 816;
-
+let testSize =0;
 
 
 
@@ -81,7 +81,10 @@ colorAdder ();
 
 
 resizeButton.addEventListener('click', function(e){
+
 blockSize = prompt("Enter how large you want the blocks.")
+
+
 
 
 for  (let i =0; i < pixelBlocks.length; i++)  {
