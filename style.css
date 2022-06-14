@@ -54,7 +54,8 @@ padding:0;
     font-weight: bold;
     padding: 6px 24px;
     border: none;
-    
+    margin-top: 160px;
+    margin-bottom: 240px;
     margin-right: 90px;
     opacity: 70%;
     
@@ -69,8 +70,22 @@ padding:0;
 }
 
 
-#menuBAr {
+#menuBar {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: auto;
+}
+
+#colourChanger {
+    height: 120px;
+    width: 120px;
+    background-color: #212529;
+    margin-right: 90px;
+}
+
+#colourChanger:hover { 
+
+    
 }
