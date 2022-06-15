@@ -93,5 +93,19 @@ padding:0;
 
 #eraserButton {
 
-    
+    background: black;
+    color: azure;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 6px 24px;
+    border: none;
+    margin-top: 160px;
+    margin-bottom: 240px;
+    margin-right: 90px;
+    opacity: 70%;
+}
+#eraserButton:hover {
+    transition: 0.3s;
+    background: azure;
+    color: #212529;
 }
