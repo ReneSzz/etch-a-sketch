@@ -25,6 +25,12 @@ container.appendChild(content);
 //creation of reszie button.
 const resizeButton = document.querySelector('#resizeButton');
 
+const eraserButton = document.querySelector('#eraserButton');
+
+
+const colorChanger = document.querySelector('#colorChanger');
+
+
 
 
 
@@ -74,7 +80,16 @@ pixelBlock.style.backgroundColor = "black";
 // calling function.
 colorAdder ();
 
-
+function eraser () {
+    // loops through and adds event to all pixel blocks.
+    for (let pixelBlock of pixelBlocks){
+    pixelBlock.addEventListener ('click' && 'mousemove', function(e){
+    pixelBlock.style.backgroundColor = "white";
+    
+    });
+    }
+    
+    }
 
 
 // Deletes current art and resizes to new value. 
@@ -102,3 +117,6 @@ colorAdder();
 
 
 
+eraserButton.addEventListener('click', function(e){
+    eraser();
+});
