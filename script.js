@@ -1,3 +1,7 @@
+
+
+
+
 // test variable decleration
 let blockSize = 4;
 const MAX_SIZE = 816;
@@ -128,3 +132,5 @@ colorChanger.addEventListener('click', function(e){
    
     colorAdder();
 });
+
+
