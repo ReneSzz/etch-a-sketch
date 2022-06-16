@@ -28,7 +28,7 @@ const resizeButton = document.querySelector('#resizeButton');
 const eraserButton = document.querySelector('#eraserButton');
 
 
-const colorChanger = document.querySelector('#colorChanger');
+const colorChanger = document.querySelector('#colourChanger');
 
 
 
@@ -119,4 +119,12 @@ colorAdder();
 
 eraserButton.addEventListener('click', function(e){
     eraser();
+});
+
+
+
+
+colorChanger.addEventListener('click', function(e){
+   
+    colorAdder();
 });
