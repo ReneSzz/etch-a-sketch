@@ -18,7 +18,6 @@ const content = document.createElement("div");
 content.classList.add('content');
 content.style.width = "816px";
 content.style.height = "816px";
-content.style.backgroundColor = "#b5e48c";
 content.style.display = "flex";
 content.style.flexWrap = "wrap";
 content.style.marginRight = "200px";
