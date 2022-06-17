@@ -3,7 +3,7 @@
 
 
 // test variable decleration
-let blockSize = 4;
+let blockSize = 32;
 const MAX_SIZE = 816;
 let testSize =0;
 
